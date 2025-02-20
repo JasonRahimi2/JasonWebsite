@@ -437,17 +437,3 @@ body {
     grid-area: 3 / 1;
   }
 }
-
-@media(max-width: 410px) {
-  .projectsHeader{
-    text-align: center;
-    margin-left: 2rem;
-  }
-
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    margin-left: 10rem;
-  }
-}
