@@ -127,7 +127,6 @@ body {
 
 #deploy {
   grid-area: 2 / 1;
-  margin-left: 2vw;
 }
 
 #github {
@@ -142,17 +141,26 @@ body {
   border-style: solid;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
 .flask p {
-  grid-area: 1 / 1;
+  grid-area: 1 / 1 / 2 / 3;
+  text-align: center;
 }
 
 .flask a {
-  grid-area: 2 / 1;
   color: inherit;
+}
+
+#flaskDeploy {
+  grid-area: 2 / 1;
+  margin-right: 1vw;
+}
+
+#flaskGithub {
+  grid-area: 2 / 2;
 }
 
 .smartphonePredictions {
@@ -361,7 +369,7 @@ body {
 }
 
 @media(max-width: 500px) {
-    .about {
+  .about {
     text-align: center;
     width: 50vw;
     grid-area: 3 / 1;
@@ -434,6 +442,31 @@ body {
   }
   
   #github {
+    grid-area: 3 / 1;
+  }
+
+  .flask {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-style: solid;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  
+  .flask p {
+    grid-area: 1 / 1;
+  }
+  
+  #flaskDeploy {
+    grid-area: 2 / 1;
+    margin-left: 1vw;
+  }
+  
+  #flaskGithub {
     grid-area: 3 / 1;
   }
 }

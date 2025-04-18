@@ -12,7 +12,8 @@ function Projects() {
             </div>
             <div className='flask'>
             <p>Stress Detection Flask API</p>
-            <a href='https://github.com/JasonRahimi2/StressDetection'>Source Code</a>
+            <a id='flaskDeploy' href='https://d2rhpbdpauukkk.cloudfront.net'>Live Demo</a>
+            <a id='flaskGithub' href='https://github.com/JasonRahimi2/StressDetection'>Source Code</a>
             </div>
             <div className='smartphonePredictions'>
             <p>Python Smartphone Price Predictions</p>
